@@ -62,6 +62,7 @@ body{
   border-radius: 20px;
   background: #ac0e6a;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .main .input .talk {
