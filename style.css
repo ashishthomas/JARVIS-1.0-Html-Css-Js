@@ -35,7 +35,9 @@ body{
 }
 
 .main .image-container .image img {
-  width: 400px;
+  clip-path: circle(50% at 50% 50%);
+  width: 300px;
+  height: 300px;
   align-items: center;
 }
 
