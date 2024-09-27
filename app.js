@@ -25,7 +25,7 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
-  speak("Initializing JARVIS....");
+  speak("Initializing JARVIS AI....");
   wishMe();
 });
 
@@ -163,8 +163,24 @@ function takeCommand(message) {
     const finalText = "Opening Calculator";
     speak(finalText);
   } else if (message.includes("calendar")) {
-    window.open("Calendar:///");
+    const url = "https://calendar.google.com/";
+    window.open(url, "_blank"); // opens in a new tab
     const finalText = "Opening Calendar";
+    speak(finalText);
+  } else if (message.includes("word")) {
+    const url = "https://office.live.com/start/Word.aspx";
+    window.open(url, "_blank"); // opens in a new tab
+    const finalText = "Opening Word";
+    speak(finalText);
+  } else if (message.includes("excel")) {
+    const url = "https://office.live.com/start/Excel.aspx";
+    window.open(url, "_blank"); // opens in a new tab
+    const finalText = "Opening Excel";
+    speak(finalText);
+  } else if (message.includes("powerpoint")) {
+    const url = "https://office.live.com/start/PowerPoint.aspx";
+    window.open(url, "_blank"); // opens in a new tab
+    const finalText = "Opening PowerPoint";
     speak(finalText);
   } else {
     window.open(
